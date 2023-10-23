@@ -36,3 +36,8 @@ From [Common Format and MIME Type for Comma-Separated Values (CSV) Files](https:
 > TEXTDATA =  %x20-21 / %x23-2B / %x2D-7E
 > ```
 
+I follow this specification closely, only swapping one rule:
+
+```
+CRLF = (CR LF / CR / LF)
+```
