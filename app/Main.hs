@@ -60,5 +60,5 @@ rstrip :: String -> String
 rstrip = reverse . dropWhile (=='\n') . reverse
 
 main :: IO ()
-main = interact $ show . parse file "STDIN" . reverse
+main = interact $ show . parse file "STDIN" . rstrip
 
